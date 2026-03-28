@@ -5,3 +5,6 @@ def get_succesful_students(student_list, passing_grade=60):
         for value in student["scores"].values():
             if value < passing_grade:
                 cnt = False
+    if cnt:
+        suc_st.append(student)
+    return suc_st
