@@ -27,5 +27,5 @@ for student in good_students:
     for value in student["scores"].values():
         sum = sum+value
     sum = sum/3
-    new_dict[student["name"]] = sum
+    new_dict[student["name"]] = round(sum, 2)
 print(new_dict)
