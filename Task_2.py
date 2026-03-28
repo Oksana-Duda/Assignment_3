@@ -8,3 +8,16 @@ def get_succesful_students(student_list, passing_grade=60):
     if cnt:
         suc_st.append(student)
     return suc_st
+
+new_dict = {}
+students_math_results = [
+{"name": "Олександр", "scores": {"Calculus": 85,
+"Algebra": 90, "Discrete Math": 78}},
+{"name": "Марія", "scores": {"Calculus": 65, "Algebra":
+55, "Discrete Math": 70}},
+{"name": "Іван", "scores": {"Calculus": 92, "Algebra": 88,
+"Discrete Math": 95}},
+{"name": "Анна", "scores": {"Calculus": 45, "Algebra": 60,
+"Discrete Math": 50}}
+]
+good_students = get_succesful_students(students_math_results)
